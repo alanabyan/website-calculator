@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desain Komunikasi Visual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!-- PARALLAX START -->
+    <section>
+        <div class="banner">
+            <img class="layer-1" src="./images/bg.png" alt="">
+            <img class="layer-2" src="./images/meteor.png" alt="">
+
+            <div class="layer-3">
+                <h1>Calculator</h1>
+                <p>Klik tombol dibawah ini untuk menggunakan kalkulator anda</p>
+                <a href="#text">Go Down</a>
+            </div>
+
+            <img class="layer-4" src="./images/4.png" alt="">
+            <img class="layer-5" src="./images/5.png" alt="">
+            <img class="layer-6" src="./images/6.png" alt="">
+        </div>
+
+        <div class="content-parallax" id="text">
+            <h1>Calculator</h1>
+
+            <!-- CALCULATOR START -->
+            <div class="container1">
+                <div class="calculator" id="targetObject">
+                    <div class="buttons">
+                            <!-- <span>AC</span>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-backspace" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M20 6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-11l-5 -5a1.5 1.5 0 0 1 0 -2l5 -5z"></path>
+                                <path d="M12 10l4 4m0 -4l-4 4"></path>
+                            </svg></span>
+                            <span>%</span>
+                            <span>÷</span>
+                            <span>7</span>
+                            <span>8</span>
+                            <span>9</span>
+                            <span>x</span>
+                            <span>4</span>
+                            <span>5</span>
+                            <span>6</span>
+                            <span>-</span>
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>+</span>
+                            <span>0</span>
+                            <span>00</span>
+                            <span>,</span>
+                            <span>=</span> -->
+                        <div class="keys">
+                            <div class="display value">
+                                <div class="content">
+                                    <div class="input"> <span class="operator"></span> </div>
+                                    <div class="output"></div>
+                                </div>
+                            </div>
+                            
+                            <div data-key="clear" class="key action">
+                                <span>AC</span>
+                            </div>
+        
+                            <div data-key="delete" class="key action">
+                                <span style="height: 61px;"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-backspace" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M20 6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-11l-5 -5a1.5 1.5 0 0 1 0 -2l5 -5z"></path>
+                                    <path d="M12 10l4 4m0 -4l-4 4"></path>
+                                </svg></span>
+                            </div>
+        
+                            <div data-key="%" class="key action">
+                                <span>%</span>
+                            </div>
+        
+                            <div data-key="/" class="key operator">
+                                <span>÷</span>
+                            </div>
+        
+                            <div data-key="7" class="key">
+                                <span>7</span>
+                            </div>
+        
+                            <div data-key="8" class="key">
+                                <span>8</span>
+                            </div>
+        
+                            <div data-key="9" class="key">
+                                <span>9</span>
+                            </div>
+        
+                            <div data-key="*" class="key operator">
+                                <span>x</span>
+                            </div>
+        
+                            <div data-key="4" class="key">
+                                <span>4</span>
+                            </div>
+        
+                            <div data-key="5" class="key">
+                                <span>5</span>
+                            </div>
+        
+                            <div data-key="6" class="key">
+                                <span>6</span>
+                            </div>
+        
+                            <div data-key="-" class="key operator">
+                                <span>-</span>
+                            </div>
+        
+                            <div data-key="1" class="key">
+                                <span>1</span>
+                            </div>
+        
+                            <div data-key="2" class="key">
+                                <span>2</span>
+                            </div>
+        
+                            <div data-key="3" class="key">
+                                <span>3</span>
+                            </div>
+        
+                            <div data-key="+" class="key operator">
+                                <span>+</span>
+                            </div>
+        
+                            <div data-key="0" class="key">
+                                <span>0</span>
+                            </div>
+        
+                            <div data-key="00" class="key">
+                                <span>00</span>
+                            </div>
+        
+                            <div data-key="," class="key">
+                                <span>,</span>
+                            </div>
+        
+                            <div data-key="=" class="key operator">
+                                <span>=</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CALCULATOR END -->
+            <div class="form">
+                <label class="label">
+                    <span class="label-text">Warna kalkulator</span>
+                    <div></div>
+                    <span class="label-text-2">Note: Mungkin warnanya ga cocok<br>&#40;untuk saat ini&#41;</span>
+                </label>
+                <input type="text" placeholder="Pilih warna anda" class="input-warna" id="inputWarna">
+            </div>
+            <div class="container-button">
+                <button class="tombol" onClick="ubahWarna()">
+                    Ubah Warna Kalkulator
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- PARALLAX END -->
+
+    
+
+
+<script src="main.js"></script>
+</body>
+</html>
